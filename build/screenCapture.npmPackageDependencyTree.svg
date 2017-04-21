@@ -1,0 +1,53 @@
+<svg height="798" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="798" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">13 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ minimize@2.1.0 </tspan>
+<tspan x="10" y="90">  ├── argh@0.1.4 </tspan>
+<tspan x="10" y="106">  ├─┬ async@2.3.0 </tspan>
+<tspan x="10" y="122">  │ └── lodash@4.17.4 </tspan>
+<tspan x="10" y="138">  ├─┬ cli-color@1.2.0 </tspan>
+<tspan x="10" y="154">  │ ├── ansi-regex@2.1.1 </tspan>
+<tspan x="10" y="170">  │ ├── d@1.0.0 </tspan>
+<tspan x="10" y="186">  │ ├─┬ es5-ext@0.10.15 </tspan>
+<tspan x="10" y="202">  │ │ └── es6-symbol@3.1.1 </tspan>
+<tspan x="10" y="218">  │ ├── es6-iterator@2.0.1 </tspan>
+<tspan x="10" y="234">  │ ├─┬ memoizee@0.4.4 </tspan>
+<tspan x="10" y="250">  │ │ ├── es6-weak-map@2.0.2 </tspan>
+<tspan x="10" y="266">  │ │ ├── event-emitter@0.3.5 </tspan>
+<tspan x="10" y="282">  │ │ ├── is-promise@2.1.0 </tspan>
+<tspan x="10" y="298">  │ │ ├── lru-queue@0.1.0 </tspan>
+<tspan x="10" y="314">  │ │ └── next-tick@1.0.0 </tspan>
+<tspan x="10" y="330">  │ └── timers-ext@0.1.2 </tspan>
+<tspan x="10" y="346">  ├─┬ diagnostics@1.1.0 </tspan>
+<tspan x="10" y="362">  │ ├─┬ colorspace@1.0.1 </tspan>
+<tspan x="10" y="378">  │ │ ├─┬ color@0.8.0 </tspan>
+<tspan x="10" y="394">  │ │ │ ├── color-convert@0.5.3 </tspan>
+<tspan x="10" y="410">  │ │ │ └─┬ color-string@0.3.0 </tspan>
+<tspan x="10" y="426">  │ │ │   └── color-name@1.1.2 </tspan>
+<tspan x="10" y="442">  │ │ └── text-hex@0.0.0 </tspan>
+<tspan x="10" y="458">  │ ├─┬ enabled@1.0.2 </tspan>
+<tspan x="10" y="474">  │ │ └── env-variable@0.0.3 </tspan>
+<tspan x="10" y="490">  │ └─┬ kuler@0.0.0 </tspan>
+<tspan x="10" y="506">  │   └── colornames@0.0.2 </tspan>
+<tspan x="10" y="522">  ├── emits@3.0.0 </tspan>
+<tspan x="10" y="538">  ├─┬ htmlparser2@3.9.2 </tspan>
+<tspan x="10" y="554">  │ ├── domelementtype@1.3.0 </tspan>
+<tspan x="10" y="570">  │ ├── domhandler@2.3.0 </tspan>
+<tspan x="10" y="586">  │ ├─┬ domutils@1.5.1 </tspan>
+<tspan x="10" y="602">  │ │ └─┬ dom-serializer@0.1.0 </tspan>
+<tspan x="10" y="618">  │ │   └── domelementtype@1.1.3 </tspan>
+<tspan x="10" y="634">  │ ├── entities@1.1.1 </tspan>
+<tspan x="10" y="650">  │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="666">  │ └─┬ readable-stream@2.2.9 </tspan>
+<tspan x="10" y="682">  │   ├── buffer-shims@1.0.0 </tspan>
+<tspan x="10" y="698">  │   ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="714">  │   ├── isarray@1.0.0 </tspan>
+<tspan x="10" y="730">  │   ├── process-nextick-args@1.0.7 </tspan>
+<tspan x="10" y="746">  │   ├── string_decoder@1.0.0 </tspan>
+<tspan x="10" y="762">  │   └── util-deprecate@1.0.2 </tspan>
+<tspan x="10" y="778">  └── uuid@3.0.1</tspan>
+</text>
+</svg>

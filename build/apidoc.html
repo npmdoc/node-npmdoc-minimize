@@ -1,0 +1,781 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >minimize (v2.1.0)</a>
+</h1>
+<h4>Minimize HTML</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.minimize">module minimize</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.minimize">
+            function <span class="apidocSignatureSpan"></span>minimize
+            <span class="apidocSignatureSpan">(parser, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers">
+            function <span class="apidocSignatureSpan">minimize.</span>helpers
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.super_">
+            function <span class="apidocSignatureSpan">minimize.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">minimize.</span>helpers.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.minimize.helpers">module minimize.helpers</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.helpers">
+            function <span class="apidocSignatureSpan">minimize.</span>helpers
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.minimize.helpers.prototype">module minimize.helpers.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.attributes">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>attributes
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.close">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>close
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.comment">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>comment
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.directive">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>directive
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.isInline">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isInline
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.isJS">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isJS
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.isStyle">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isStyle
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.open">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>open
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.quote">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>quote
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.script">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>script
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.structure">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>structure
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.style">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>style
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.tag">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>tag
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.minimize.helpers.prototype.text">
+            function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>text
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.minimize" id="apidoc.module.minimize">module minimize</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.minimize" id="apidoc.element.minimize.minimize">
+        function <span class="apidocSignatureSpan"></span>minimize
+        <span class="apidocSignatureSpan">(parser, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Minimize(parser, options) {
+  if (&#x27;object&#x27; !== typeof options) {
+    options = parser || {};
+    options.dom = options.dom || {};
+    parser = void 0;
+  }
+
+  this.emits = emits;
+  this.plugins = Object.create(null);
+  this.helpers = new Helpers(options);
+
+  //
+  // Prepare the parser.
+  //
+  this.htmlparser = parser || new html.Parser(
+    new html.DomHandler(this.emits(&#x27;read&#x27;)),
+    options.dom
+  );
+
+  //
+  // Register plugins.
+  //
+  this.plug(options.plugins);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers" id="apidoc.element.minimize.helpers">
+        function <span class="apidocSignatureSpan">minimize.</span>helpers
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Helpers(options) {
+  this.config = {};
+
+  for (var key in options || {}) {
+    this.config[key] = options[key];
+  }
+
+  this.ancestor = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.super_" id="apidoc.element.minimize.super_">
+        function <span class="apidocSignatureSpan">minimize.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.minimize.helpers" id="apidoc.module.minimize.helpers">module minimize.helpers</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.helpers" id="apidoc.element.minimize.helpers.helpers">
+        function <span class="apidocSignatureSpan">minimize.</span>helpers
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Helpers(options) {
+  this.config = {};
+
+  for (var key in options || {}) {
+    this.config[key] = options[key];
+  }
+
+  this.ancestor = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.minimize.helpers.prototype" id="apidoc.module.minimize.helpers.prototype">module minimize.helpers.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.attributes" id="apidoc.element.minimize.helpers.prototype.attributes">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>attributes
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attributes(element) {
+  var attr = element.attribs
+    , self = this
+    , name = element.name
+    , value, bool, allowed;
+
+  if (!attr || typeof attr !== &#x27;object&#x27;) return &#x27;&#x27;;
+  return Object.keys(attr).reduce(function (result, key) {
+    value = attr[key];
+    bool = ~list.redundant.indexOf(key);
+
+    //
+    // Is the attribute allowed on the HTML element? If so, allow special
+    // treatment. If not, then just return the full attribute and its value.
+    //
+    allowed = Object.hasOwnProperty.call(list.attributes, key) &#x26;&#x26; list.attributes[key];
+    allowed = allowed
+      ? allowed === &#x27;*&#x27; || ~allowed.indexOf(name)
+      : ~key.indexOf(&#x27;data-&#x27;);
+
+    //
+    // Remove attributes that are empty, not boolean and no semantic value.
+    //
+    if (!self.config.empty &#x26;&#x26; !/data|itemscope/.test(key) &#x26;&#x26; !bool &#x26;&#x26; !value &#x26;&#x26; allowed) return result;
+
+    //
+    // Boolean attributes should be added sparse, also unset attributes
+    // should remain unset if retained with `empty` option.
+    //
+    result = result + &#x27; &#x27; + key;
+    if (!self.config.spare) {
+      if (!value.length) return result;
+      if (allowed &#x26;&#x26; bool &#x26;&#x26; (value === key || &#x27;true&#x27; === value)) return result;
+    }
+
+    //
+    // Return full attribute with value.
+    //
+    return result + &#x27;=&#x27; + self.quote(!self.config.whitespace ? compact(value).trim() : value);
+  }, &#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*/
+Helpers.prototype.tag = function tag(element) {
+ //
+ // Check if the current element requires structure, store for later reference.
+ //
+ if (this.structure(element)) this.ancestor.push(element);
+
+ return &#x27;&#x3c;&#x27; + element.name + this.<span class="apidocCodeKeywordSpan">attributes</span>(element) + &#x27;&#x3e;&#
+x27;;
+};
+
+/**
+* Loop set of attributes belonging to an element. Surrounds attributes with
+* quotes if required, omits if not.
+*
+* @param {Object} element element containing attributes
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.close" id="apidoc.element.minimize.helpers.prototype.close">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>close
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function close(element) {
+  if (this.structure(element)) this.ancestor.pop();
+
+  return ~list.node.indexOf(element.type) &#x26;&#x26; !~list.singular.indexOf(element.name)
+    ? &#x27;&#x3c;/&#x27; + element.name + &#x27;&#x3e;&#x27;
+    : &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.comment" id="apidoc.element.minimize.helpers.prototype.comment">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>comment
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function comment(element) {
+  var cfg = this.config;
+
+  function io() {
+    return &#x27;&#x3c;!--&#x27; + compact(element.data, true).trim() + &#x27;--&#x3e;&#x27;;
+  }
+
+  if (cfg.ssi &#x26;&#x26; ~element.data.indexOf(&#x27;#&#x27;)) return io();
+  if (cfg.conditionals &#x26;&#x26; (~element.data.indexOf(&#x27;[if&#x27;)
+      || ~element.data.indexOf(&#x27;&#x3c;![endif&#x27;))) return io();
+  if (cfg.comments) return io();
+
+  return &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.directive" id="apidoc.element.minimize.helpers.prototype.directive">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>directive
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function directive(element) {
+  return &#x27;&#x3c;&#x27; + element.data + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.isInline" id="apidoc.element.minimize.helpers.prototype.isInline">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isInline
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isInline(element) {
+  return !!~list.inline.indexOf(element.name);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//
+// Collapse space between text and inline elements, clobber space without
+// inline elements.
+//
+if (!ancestors) {
+  content = compact(content.replace(
+    ancestors ? /^[^\S\n]+/ : /^\s+/,
+    prev &#x26;&#x26; this.<span class="apidocCodeKeywordSpan">isInline</span>(prev) ? &#x27; &#x27; : space
+  ).replace(
+    ancestors ? /[^\S\n]+$/ : /\s+$/,
+    next &#x26;&#x26; this.isInline(next) ? &#x27; &#x27; : space
+  ));
+}
+
+//
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.isJS" id="apidoc.element.minimize.helpers.prototype.isJS">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isJS
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isJS(element) {
+  return (element.type === &#x27;script&#x27; &#x26;&#x26; (!element.attribs || !element.attribs.type))
+    || (element.type === &#x27;script&#x27; &#x26;&#x26; element.attribs.type === &#x27;text/javascript&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*
+* @param {Object} element
+* @return {Boolean}
+* @api public
+*/
+Helpers.prototype.structure = function structure(element) {
+ return element.type !== &#x27;text&#x27;
+   ? !!~list.structural.indexOf(element.name) || this.<span class="apidocCodeKeywordSpan">isJS</span>(element) || this.isStyle(element
+)
+   : false;
+};
+
+/**
+* Return trimmed text, if text requires no structure new lines and spaces will
+* be replaced with a single white space. Any white space adjacent to an inline
+* element is replaced with a single space.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.isStyle" id="apidoc.element.minimize.helpers.prototype.isStyle">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>isStyle
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isStyle(element) {
+  return element.type === &#x27;style&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+*
+* @param {Object} element
+* @return {Boolean}
+* @api public
+*/
+Helpers.prototype.structure = function structure(element) {
+ return element.type !== &#x27;text&#x27;
+   ? !!~list.structural.indexOf(element.name) || this.isJS(element) || this.<span class="apidocCodeKeywordSpan">isStyle</span>(element
+)
+   : false;
+};
+
+/**
+* Return trimmed text, if text requires no structure new lines and spaces will
+* be replaced with a single white space. Any white space adjacent to an inline
+* element is replaced with a single space.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.open" id="apidoc.element.minimize.helpers.prototype.open">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>open
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function open(element) {
+  if (element.type in this) {
+    return this[element.type](element);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.quote" id="apidoc.element.minimize.helpers.prototype.quote">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>quote
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function quote(value) {
+  var delim = ~value.indexOf(&#x27;&#x22;&#x27;) ? &#x22;&#x27;&#x22; : &#x27;&#x22;&#x27;;
+
+  //
+  // Quote is only called if required so it&#x27;s safe to return quotes on no value.
+  //
+  if (!value) return &#x27;&#x22;&#x22;&#x27;;
+
+  //
+  // Always quote attributes having spaces, equal signs, single quotes
+  // or ending in a slash. Attributes containing double quotes will be
+  // single quoted.
+  //
+  return /[\s=&#x27;&#x22;&#x3c;&#x3e;]+|\/$/.test(value) || this.config.quotes
+    ? delim + value + delim
+    : value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     if (!value.length) return result;
+     if (allowed &#x26;&#x26; bool &#x26;&#x26; (value === key || &#x27;true&#x27; === value)) return result;
+   }
+
+   //
+   // Return full attribute with value.
+   //
+   return result + &#x27;=&#x27; + self.<span class="apidocCodeKeywordSpan">quote</span>(!self.config.whitespace ? compact(value
+).trim() : value);
+ }, &#x27;&#x27;);
+};
+
+/**
+* Proxy to render HTML.
+*
+* @param {Object} element
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.script" id="apidoc.element.minimize.helpers.prototype.script">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>script
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tag(element) {
+  //
+  // Check if the current element requires structure, store for later reference.
+  //
+  if (this.structure(element)) this.ancestor.push(element);
+
+  return &#x27;&#x3c;&#x27; + element.name + this.attributes(element) + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.structure" id="apidoc.element.minimize.helpers.prototype.structure">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>structure
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function structure(element) {
+  return element.type !== &#x27;text&#x27;
+    ? !!~list.structural.indexOf(element.name) || this.isJS(element) || this.isStyle(element)
+    : false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @return {String}
+* @api public
+*/
+Helpers.prototype.tag = function tag(element) {
+ //
+ // Check if the current element requires structure, store for later reference.
+ //
+ if (this.<span class="apidocCodeKeywordSpan">structure</span>(element)) this.ancestor.push(element);
+
+ return &#x27;&#x3c;&#x27; + element.name + this.attributes(element) + &#x27;&#x3e;&#x27;;
+};
+
+/**
+* Loop set of attributes belonging to an element. Surrounds attributes with
+* quotes if required, omits if not.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.style" id="apidoc.element.minimize.helpers.prototype.style">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>style
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tag(element) {
+  //
+  // Check if the current element requires structure, store for later reference.
+  //
+  if (this.structure(element)) this.ancestor.push(element);
+
+  return &#x27;&#x3c;&#x27; + element.name + this.attributes(element) + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.tag" id="apidoc.element.minimize.helpers.prototype.tag">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>tag
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tag(element) {
+  //
+  // Check if the current element requires structure, store for later reference.
+  //
+  if (this.structure(element)) this.ancestor.push(element);
+
+  return &#x27;&#x3c;&#x27; + element.name + this.attributes(element) + &#x27;&#x3e;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.minimize.helpers.prototype.text" id="apidoc.element.minimize.helpers.prototype.text">
+        function <span class="apidocSignatureSpan">minimize.helpers.prototype.</span>text
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function text(element) {
+  var ancestors = this.ancestor.length
+    , content = element.data
+    , next = element.next
+    , prev = element.prev
+    , space = this.config.loose ? &#x27; &#x27; : &#x27;&#x27;;
+
+  //
+  // Collapse space between text and inline elements, clobber space without
+  // inline elements.
+  //
+  if (!ancestors) {
+    content = compact(content.replace(
+      ancestors ? /^[^\S\n]+/ : /^\s+/,
+      prev &#x26;&#x26; this.isInline(prev) ? &#x27; &#x27; : space
+    ).replace(
+      ancestors ? /[^\S\n]+$/ : /\s+$/,
+      next &#x26;&#x26; this.isInline(next) ? &#x27; &#x27; : space
+    ));
+  }
+
+  //
+  // Remove CDATA from scripts.
+  //
+  if (!this.config.cdata &#x26;&#x26; ancestors &#x26;&#x26; this.isJS(this.ancestor[ancestors - 1])) {
+    content = content.replace(/\/*&#x3c;!\[CDATA\[/g, &#x27;&#x27;).replace(/\/*\]\]&#x3e;/g, &#x27;&#x27;);
+  }
+
+  return content;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
